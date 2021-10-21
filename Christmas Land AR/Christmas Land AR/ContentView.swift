@@ -39,6 +39,7 @@ struct ContentView : View {
                                     .frame(height: 50)
                                     .aspectRatio(1/1,
                                     contentMode: .fit)
+                                    .foregroundColor(models [String]? Color(.black) : Color.grey)
                      
                         }
                     }
