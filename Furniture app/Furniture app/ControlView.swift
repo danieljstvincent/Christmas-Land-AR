@@ -9,6 +9,8 @@ import SwiftUI
 import RealityKit
 
 struct ControlView: View {
+
+    
     var body: some View{
         VStack {
         
@@ -43,7 +45,10 @@ struct ControlVisibilityToggleButton: View {
             .frame(width: 50, height: 50)
             .cornerRadius(8.0)
         }
+        .padding(.top, 45)
+        .padding(.training, 20)
     }
+}
 
 struct ControlButtonBar: View {
     var body: some View {

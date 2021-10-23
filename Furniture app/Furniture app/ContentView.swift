@@ -9,6 +9,10 @@ import SwiftUI
 import RealityKit
 
 struct ContentView: View {
+    
+    @State private var
+        isControlsVisible: Bool = true
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             
@@ -16,7 +20,7 @@ struct ContentView: View {
             
             ControlView()
         }
-            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
 }
 
