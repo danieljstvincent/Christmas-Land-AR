@@ -18,7 +18,7 @@ struct ControlView: View {
             
         Spacer()
             
-//        ControlButtonBar()
+        ControlButtonBar()
         }
     }
 }
@@ -46,7 +46,7 @@ struct ControlVisibilityToggleButton: View {
             .cornerRadius(8.0)
         }
         .padding(.top, 45)
-        .padding(.training, 20)
+//        .padding(.training, 20)
     }
 }
 
@@ -67,46 +67,46 @@ struct ControlButtonBar: View {
             
             Spacer()
             
-            Button(action: {
-                print("Browse button pressed.")
-                
-            }){
-                Image(systemName: "square.grid.2x2")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .buttonStyle(PlainButtonStyle())
-            }
-            .frame(width: 50, height: 50)
+//            Button(action: {
+//                print("Browse button pressed.")
+//
+//            }){
+//                Image(systemName: "square.grid.2x2")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(.white)
+//                    .buttonStyle(PlainButtonStyle())
+//            }
+//            .frame(width: 50, height: 50)
+//
+//            Spacer()
+//
+//            Button(action: {
+//                print("Setting button pressed")
+//
+//            }){
+//                Image(systemName: "slider.horizontal.3")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(.white)
+//                    .buttonStyle(PlainButtonStyle())
+//            }
+//            .frame(width: 50, height: 50)
             
+            
+            ControlButton(systemIconName: "clock.fill" ) {
+                print("MostRecentlyPlaced button pressed.")
+            }
+
             Spacer()
-            
-            Button(action: {
-                print("Setting button pressed")
-                
-            }){
-                Image(systemName: "slider.horizontal.3")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .buttonStyle(PlainButtonStyle())
+
+            ControlButton(systemIconName: "square.grid.2x2" ) {
+                print("Browse Button pressed.")
             }
-            .frame(width: 50, height: 50)
-            
-            
-//            ControlButton(systemIconName: "clock.fill" ) {
-//                print("MostRecentlyPlaced button pressed.")
-//            }
-//
-//            Spacer()
-//
-//            ControlButton(systemIconName: "square.grid.2x2" ) {
-//                print("Browse Button pressed.")
-//            }
-//
-//            Spacer()
-//
-//            ControlButton(systemIconName: "slider.horizontal.3" ) {
-//                print("Setting button pressed.")
-//            }
+
+            Spacer()
+
+            ControlButton(systemIconName: "slider.horizontal.3" ) {
+                print("Setting button pressed.")
+            }
 
         }
         .frame(maxWidth: 500)
@@ -114,7 +114,8 @@ struct ControlButtonBar: View {
         .background(Color.green.opacity(0.25))
         }
     }
-}
+
+
 struct ControlButton: View {
     let systemIconName: String
     let action: ()-> Void

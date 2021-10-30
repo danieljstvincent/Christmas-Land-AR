@@ -12,11 +12,12 @@ struct ContentView: View {
     
     @State private var
         isControlsVisible: Bool = true
-    
+ 
     var body: some View {
         ZStack(alignment: .bottom) {
             
             ARViewContainer()
+
             
             ControlView()
         }
@@ -36,9 +37,4 @@ struct ARViewContainer:
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {}
-}
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+} 

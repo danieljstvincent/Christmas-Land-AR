@@ -11,8 +11,6 @@
 		C6E472042721C7EA00AC7E96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E472032721C7EA00AC7E96 /* ContentView.swift */; };
 		C6E472062721C7EC00AC7E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E472052721C7EC00AC7E96 /* Assets.xcassets */; };
 		C6E472092721C7ED00AC7E96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E472082721C7EC00AC7E96 /* Preview Assets.xcassets */; };
-		C6E472142721C7ED00AC7E96 /* Furniture_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E472132721C7ED00AC7E96 /* Furniture_appTests.swift */; };
-		C6E4721F2721C7ED00AC7E96 /* Furniture_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E4721E2721C7ED00AC7E96 /* Furniture_appUITests.swift */; };
 		C6E472302721F59900AC7E96 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6E4722D2721F59900AC7E96 /* teapot.usdz */; };
 		C6E472312721F59900AC7E96 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6E4722E2721F59900AC7E96 /* cup_saucer_set.usdz */; };
 		C6E472322721F59900AC7E96 /* redchair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6E4722F2721F59900AC7E96 /* redchair.usdz */; };
@@ -44,11 +42,7 @@
 		C6E472082721C7EC00AC7E96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6E4720A2721C7ED00AC7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E4720F2721C7ED00AC7E96 /* Furniture appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Furniture appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E472132721C7ED00AC7E96 /* Furniture_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appTests.swift; sourceTree = "<group>"; };
-		C6E472152721C7ED00AC7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E4721A2721C7ED00AC7E96 /* Furniture appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Furniture appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6E4721E2721C7ED00AC7E96 /* Furniture_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Furniture_appUITests.swift; sourceTree = "<group>"; };
-		C6E472202721C7ED00AC7E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6E4722D2721F59900AC7E96 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
 		C6E4722E2721F59900AC7E96 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
 		C6E4722F2721F59900AC7E96 /* redchair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = redchair.usdz; sourceTree = "<group>"; };
@@ -84,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				C6E472002721C7EA00AC7E96 /* Furniture app */,
-				C6E472122721C7ED00AC7E96 /* Furniture appTests */,
-				C6E4721D2721C7ED00AC7E96 /* Furniture appUITests */,
 				C6E471FF2721C7EA00AC7E96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,24 +112,6 @@
 				C6E472082721C7EC00AC7E96 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C6E472122721C7ED00AC7E96 /* Furniture appTests */ = {
-			isa = PBXGroup;
-			children = (
-				C6E472132721C7ED00AC7E96 /* Furniture_appTests.swift */,
-				C6E472152721C7ED00AC7E96 /* Info.plist */,
-			);
-			path = "Furniture appTests";
-			sourceTree = "<group>";
-		};
-		C6E4721D2721C7ED00AC7E96 /* Furniture appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C6E4721E2721C7ED00AC7E96 /* Furniture_appUITests.swift */,
-				C6E472202721C7ED00AC7E96 /* Info.plist */,
-			);
-			path = "Furniture appUITests";
 			sourceTree = "<group>";
 		};
 		C6E4722C2721F54E00AC7E96 /* 3D Assets */ = {
@@ -292,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E472142721C7ED00AC7E96 /* Furniture_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E4721F2721C7ED00AC7E96 /* Furniture_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
