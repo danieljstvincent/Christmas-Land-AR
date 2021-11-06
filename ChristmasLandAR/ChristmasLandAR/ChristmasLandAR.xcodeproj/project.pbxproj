@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C64986A62728AFB000178DD0 /* ChristmasLandARApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986A52728AFB000178DD0 /* ChristmasLandARApp.swift */; };
+		C64986A82728AFB100178DD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986A72728AFB100178DD0 /* ContentView.swift */; };
+		C64986AA2728AFB400178DD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64986A92728AFB400178DD0 /* Assets.xcassets */; };
+		C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64986AC2728AFB400178DD0 /* Preview Assets.xcassets */; };
+		C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986B72728AFB400178DD0 /* ChristmasLandARTests.swift */; };
+		C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */; };
+		C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512E9272F5A45003D6618 /* PlacementSettings.swift */; };
+		C69512EC27304446003D6618 /* ARFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512EB27304445003D6618 /* ARFApp.swift */; };
+		C69512EE273045C9003D6618 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512ED273045C9003D6618 /* PlacementView.swift */; };
+		C69512F327306011003D6618 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512F227306011003D6618 /* CustomARView.swift */; };
+		C6952DA6273646E50086287B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986D02728B07300178DD0 /* ControlView.swift */; };
+		C6952DAA273648760086287B /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C6952DA9273648760086287B /* FocusEntity */; };
+		C6D31D30272D146600EE23A2 /* BrowseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D31D2F272D146600EE23A2 /* BrowseViews.swift */; };
+		C6D31D32272D1C5800EE23A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D31D31272D1C5800EE23A2 /* Model.swift */; };
+		C6D31D38272DC89900EE23A2 /* Lights.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D34272DC89800EE23A2 /* Lights.usdz */; };
+		C6D31D39272DC89900EE23A2 /* Base.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D35272DC89800EE23A2 /* Base.usdz */; };
+		C6D31D3A272DC89900EE23A2 /* Tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D36272DC89800EE23A2 /* Tree.usdz */; };
+		C6D31D3B272DC89900EE23A2 /* Star.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D37272DC89800EE23A2 /* Star.usdz */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C64986B42728AFB400178DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C649869A2728AFB000178DD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64986A12728AFB000178DD0;
+			remoteInfo = ChristmasLandAR;
+		};
+		C64986BF2728AFB400178DD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C649869A2728AFB000178DD0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C64986A12728AFB000178DD0;
+			remoteInfo = ChristmasLandAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C64986A22728AFB000178DD0 /* ChristmasLandAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasLandAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64986A52728AFB000178DD0 /* ChristmasLandARApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLandARApp.swift; sourceTree = "<group>"; };
+		C64986A72728AFB100178DD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C64986A92728AFB400178DD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C64986AC2728AFB400178DD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C64986AE2728AFB400178DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64986B32728AFB400178DD0 /* ChristmasLandARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChristmasLandARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64986B72728AFB400178DD0 /* ChristmasLandARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLandARTests.swift; sourceTree = "<group>"; };
+		C64986B92728AFB400178DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64986BE2728AFB400178DD0 /* ChristmasLandARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChristmasLandARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLandARUITests.swift; sourceTree = "<group>"; };
+		C64986C42728AFB400178DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C64986D02728B07300178DD0 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		C69512E9272F5A45003D6618 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
+		C69512EB27304445003D6618 /* ARFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFApp.swift; sourceTree = "<group>"; };
+		C69512ED273045C9003D6618 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		C69512F227306011003D6618 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		C6D31D2F272D146600EE23A2 /* BrowseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViews.swift; sourceTree = "<group>"; };
+		C6D31D31272D1C5800EE23A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C6D31D34272DC89800EE23A2 /* Lights.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Lights.usdz; sourceTree = "<group>"; };
+		C6D31D35272DC89800EE23A2 /* Base.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Base.usdz; sourceTree = "<group>"; };
+		C6D31D36272DC89800EE23A2 /* Tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tree.usdz; sourceTree = "<group>"; };
+		C6D31D37272DC89800EE23A2 /* Star.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Star.usdz; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C649869F2728AFB000178DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6952DAA273648760086287B /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986B02728AFB400178DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986BB2728AFB400178DD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C64986992728AFB000178DD0 = {
+			isa = PBXGroup;
+			children = (
+				C64986A42728AFB000178DD0 /* ChristmasLandAR */,
+				C64986B62728AFB400178DD0 /* ChristmasLandARTests */,
+				C64986C12728AFB400178DD0 /* ChristmasLandARUITests */,
+				C64986A32728AFB000178DD0 /* Products */,
+				C6952DA12735ECB40086287B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C64986A32728AFB000178DD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C64986A22728AFB000178DD0 /* ChristmasLandAR.app */,
+				C64986B32728AFB400178DD0 /* ChristmasLandARTests.xctest */,
+				C64986BE2728AFB400178DD0 /* ChristmasLandARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64986A42728AFB000178DD0 /* ChristmasLandAR */ = {
+			isa = PBXGroup;
+			children = (
+				C69512EB27304445003D6618 /* ARFApp.swift */,
+				C64986A52728AFB000178DD0 /* ChristmasLandARApp.swift */,
+				C64986A72728AFB100178DD0 /* ContentView.swift */,
+				C69512F227306011003D6618 /* CustomARView.swift */,
+				C64986D02728B07300178DD0 /* ControlView.swift */,
+				C6D31D2F272D146600EE23A2 /* BrowseViews.swift */,
+				C69512ED273045C9003D6618 /* PlacementView.swift */,
+				C69512E9272F5A45003D6618 /* PlacementSettings.swift */,
+				C6D31D31272D1C5800EE23A2 /* Model.swift */,
+				C6D31D33272DC65300EE23A2 /* 3DAssets */,
+				C64986A92728AFB400178DD0 /* Assets.xcassets */,
+				C64986AE2728AFB400178DD0 /* Info.plist */,
+				C64986AB2728AFB400178DD0 /* Preview Content */,
+			);
+			path = ChristmasLandAR;
+			sourceTree = "<group>";
+		};
+		C64986AB2728AFB400178DD0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C64986AC2728AFB400178DD0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C64986B62728AFB400178DD0 /* ChristmasLandARTests */ = {
+			isa = PBXGroup;
+			children = (
+				C64986B72728AFB400178DD0 /* ChristmasLandARTests.swift */,
+				C64986B92728AFB400178DD0 /* Info.plist */,
+			);
+			path = ChristmasLandARTests;
+			sourceTree = "<group>";
+		};
+		C64986C12728AFB400178DD0 /* ChristmasLandARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */,
+				C64986C42728AFB400178DD0 /* Info.plist */,
+			);
+			path = ChristmasLandARUITests;
+			sourceTree = "<group>";
+		};
+		C6952DA12735ECB40086287B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6D31D33272DC65300EE23A2 /* 3DAssets */ = {
+			isa = PBXGroup;
+			children = (
+				C6D31D35272DC89800EE23A2 /* Base.usdz */,
+				C6D31D34272DC89800EE23A2 /* Lights.usdz */,
+				C6D31D37272DC89800EE23A2 /* Star.usdz */,
+				C6D31D36272DC89800EE23A2 /* Tree.usdz */,
+			);
+			path = 3DAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C64986A12728AFB000178DD0 /* ChristmasLandAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64986C72728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandAR" */;
+			buildPhases = (
+				C649869E2728AFB000178DD0 /* Sources */,
+				C649869F2728AFB000178DD0 /* Frameworks */,
+				C64986A02728AFB000178DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChristmasLandAR;
+			packageProductDependencies = (
+				C6952DA9273648760086287B /* FocusEntity */,
+			);
+			productName = ChristmasLandAR;
+			productReference = C64986A22728AFB000178DD0 /* ChristmasLandAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C64986B22728AFB400178DD0 /* ChristmasLandARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64986CA2728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandARTests" */;
+			buildPhases = (
+				C64986AF2728AFB400178DD0 /* Sources */,
+				C64986B02728AFB400178DD0 /* Frameworks */,
+				C64986B12728AFB400178DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64986B52728AFB400178DD0 /* PBXTargetDependency */,
+			);
+			name = ChristmasLandARTests;
+			productName = ChristmasLandARTests;
+			productReference = C64986B32728AFB400178DD0 /* ChristmasLandARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C64986BD2728AFB400178DD0 /* ChristmasLandARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C64986CD2728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandARUITests" */;
+			buildPhases = (
+				C64986BA2728AFB400178DD0 /* Sources */,
+				C64986BB2728AFB400178DD0 /* Frameworks */,
+				C64986BC2728AFB400178DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C64986C02728AFB400178DD0 /* PBXTargetDependency */,
+			);
+			name = ChristmasLandARUITests;
+			productName = ChristmasLandARUITests;
+			productReference = C64986BE2728AFB400178DD0 /* ChristmasLandARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C649869A2728AFB000178DD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C64986A12728AFB000178DD0 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					C64986B22728AFB400178DD0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C64986A12728AFB000178DD0;
+					};
+					C64986BD2728AFB400178DD0 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = C64986A12728AFB000178DD0;
+					};
+				};
+			};
+			buildConfigurationList = C649869D2728AFB000178DD0 /* Build configuration list for PBXProject "ChristmasLandAR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C64986992728AFB000178DD0;
+			packageReferences = (
+				C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = C64986A32728AFB000178DD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C64986A12728AFB000178DD0 /* ChristmasLandAR */,
+				C64986B22728AFB400178DD0 /* ChristmasLandARTests */,
+				C64986BD2728AFB400178DD0 /* ChristmasLandARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C64986A02728AFB000178DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D31D39272DC89900EE23A2 /* Base.usdz in Resources */,
+				C6D31D38272DC89900EE23A2 /* Lights.usdz in Resources */,
+				C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */,
+				C6D31D3A272DC89900EE23A2 /* Tree.usdz in Resources */,
+				C64986AA2728AFB400178DD0 /* Assets.xcassets in Resources */,
+				C6D31D3B272DC89900EE23A2 /* Star.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986B12728AFB400178DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986BC2728AFB400178DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C649869E2728AFB000178DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6952DA6273646E50086287B /* ControlView.swift in Sources */,
+				C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */,
+				C69512EC27304446003D6618 /* ARFApp.swift in Sources */,
+				C69512EE273045C9003D6618 /* PlacementView.swift in Sources */,
+				C6D31D32272D1C5800EE23A2 /* Model.swift in Sources */,
+				C69512F327306011003D6618 /* CustomARView.swift in Sources */,
+				C6D31D30272D146600EE23A2 /* BrowseViews.swift in Sources */,
+				C64986A82728AFB100178DD0 /* ContentView.swift in Sources */,
+				C64986A62728AFB000178DD0 /* ChristmasLandARApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986AF2728AFB400178DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64986BA2728AFB400178DD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C64986B52728AFB400178DD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64986A12728AFB000178DD0 /* ChristmasLandAR */;
+			targetProxy = C64986B42728AFB400178DD0 /* PBXContainerItemProxy */;
+		};
+		C64986C02728AFB400178DD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C64986A12728AFB000178DD0 /* ChristmasLandAR */;
+			targetProxy = C64986BF2728AFB400178DD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C64986C52728AFB400178DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C64986C62728AFB400178DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C64986C82728AFB400178DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_ASSET_PATHS = "\"ChristmasLandAR/Preview Content\"";
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChristmasLandAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C64986C92728AFB400178DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_ASSET_PATHS = "\"ChristmasLandAR/Preview Content\"";
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ChristmasLandAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C64986CB2728AFB400178DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				INFOPLIST_FILE = ChristmasLandARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChristmasLandAR.app/ChristmasLandAR";
+			};
+			name = Debug;
+		};
+		C64986CC2728AFB400178DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				INFOPLIST_FILE = ChristmasLandARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChristmasLandAR.app/ChristmasLandAR";
+			};
+			name = Release;
+		};
+		C64986CE2728AFB400178DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				INFOPLIST_FILE = ChristmasLandARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChristmasLandAR;
+			};
+			name = Debug;
+		};
+		C64986CF2728AFB400178DD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YXKH3RC58L;
+				INFOPLIST_FILE = ChristmasLandARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danieljstvincent.www.ChristmasLandARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChristmasLandAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C649869D2728AFB000178DD0 /* Build configuration list for PBXProject "ChristmasLandAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64986C52728AFB400178DD0 /* Debug */,
+				C64986C62728AFB400178DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64986C72728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64986C82728AFB400178DD0 /* Debug */,
+				C64986C92728AFB400178DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64986CA2728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64986CB2728AFB400178DD0 /* Debug */,
+				C64986CC2728AFB400178DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C64986CD2728AFB400178DD0 /* Build configuration list for PBXNativeTarget "ChristmasLandARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C64986CE2728AFB400178DD0 /* Debug */,
+				C64986CF2728AFB400178DD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.0.0;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6952DA9273648760086287B /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C649869A2728AFB000178DD0 /* Project object */;
+}
