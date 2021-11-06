@@ -75,22 +75,22 @@ struct Models {
     init() {
         //Base
         let Base = Model(name: "Base", category: .Base, scaleCompensation:
-                                0.32/100)
+                                0.100/100)
         self.all += [Base]
         
         //Tree
         let Tree = Model(name: "Tree", category: .Base, scaleCompensation:
-                                0.32/100)
+                                0.100/100)
         self.all += [Tree]
         
         //Lights
         let Lights = Model(name: "Lights", category: .Base, scaleCompensation:
-                                0.32/100)
+                                0.100/100)
         self.all += [Lights]
         
         //Topper
         let Star = Model(name: "Star", category: .Base, scaleCompensation:
-                                0.32/100)
+                                0.100/100)
         self.all += [Star]
     }
     
