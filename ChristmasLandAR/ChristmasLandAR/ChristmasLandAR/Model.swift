@@ -84,7 +84,7 @@ struct Models {
         //Tree
         let Tree = Model(name: "Tree", category: .Base, scaleCompensation:
                                 0.100/100)
-        
+        self.all += [Tree]
         //Lights
         let Lights = Model(name: "Lights", category: .Base, scaleCompensation:
                                 0.100/100)
@@ -96,6 +96,9 @@ struct Models {
         self.all += [Star]
         
         //Entire Christmas Tree
+        let ChristmasTree = Model(name: "ChristmasTree", category: .Base, scaleCompensation:
+                                0.100/100)
+        self.all += [ChristmasTree]
 
     }
     

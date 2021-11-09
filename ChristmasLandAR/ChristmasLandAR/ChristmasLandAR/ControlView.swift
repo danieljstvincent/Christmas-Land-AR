@@ -108,7 +108,7 @@ struct ControlButtonBar: View {
         }
         .frame(maxWidth: 500)
         .padding(30)
-        .background(Color.green.opacity(0.25))
+        .background(Color.red.opacity(0.75))
         }
     }
 
