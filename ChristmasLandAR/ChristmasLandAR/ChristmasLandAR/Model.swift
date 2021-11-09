@@ -13,6 +13,7 @@ enum ModelCategory: CaseIterable {
     case Base
     case Tree
     case Lights
+    case Ornunments
     case Topper
     
     var label: String {
@@ -24,6 +25,8 @@ enum ModelCategory: CaseIterable {
                 return "ChristmasTree"
             case .Lights:
                 return "lights"
+            case .Ornunments:
+                return "Ornuments"
             case .Topper:
                 return "Topper"
             }
@@ -81,7 +84,6 @@ struct Models {
         //Tree
         let Tree = Model(name: "Tree", category: .Base, scaleCompensation:
                                 0.100/100)
-        self.all += [Tree]
         
         //Lights
         let Lights = Model(name: "Lights", category: .Base, scaleCompensation:
@@ -92,6 +94,9 @@ struct Models {
         let Star = Model(name: "Star", category: .Base, scaleCompensation:
                                 0.100/100)
         self.all += [Star]
+        
+        //Entire Christmas Tree
+
     }
     
     func get(category: ModelCategory) -> [Model] {
