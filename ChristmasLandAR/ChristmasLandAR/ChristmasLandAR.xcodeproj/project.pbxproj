@@ -13,6 +13,14 @@
 		C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64986AC2728AFB400178DD0 /* Preview Assets.xcassets */; };
 		C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986B72728AFB400178DD0 /* ChristmasLandARTests.swift */; };
 		C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */; };
+		C681819F273B20FE0080F21B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C681819E273B20FE0080F21B /* FirebaseAuth */; };
+		C68181A1273B20FE0080F21B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A0273B20FE0080F21B /* FirebaseFirestore */; };
+		C68181A3273B20FE0080F21B /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A2273B20FE0080F21B /* FirebaseFirestoreSwift-Beta */; };
+		C68181A5273B20FE0080F21B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A4273B20FE0080F21B /* FirebaseStorage */; };
+		C68181A7273B20FE0080F21B /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A6273B20FE0080F21B /* FirebaseStorageSwift-Beta */; };
+		C68181A9273B23820080F21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C68181A8273B23820080F21B /* GoogleService-Info.plist */; };
+		C68181AA273B23820080F21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C68181A8273B23820080F21B /* GoogleService-Info.plist */; };
+		C68181AB273B23820080F21B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C68181A8273B23820080F21B /* GoogleService-Info.plist */; };
 		C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512E9272F5A45003D6618 /* PlacementSettings.swift */; };
 		C69512EC27304446003D6618 /* ARFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512EB27304445003D6618 /* ARFApp.swift */; };
 		C69512EE273045C9003D6618 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512ED273045C9003D6618 /* PlacementView.swift */; };
@@ -59,6 +67,7 @@
 		C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLandARUITests.swift; sourceTree = "<group>"; };
 		C64986C42728AFB400178DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64986D02728B07300178DD0 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		C68181A8273B23820080F21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C69512E9272F5A45003D6618 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C69512EB27304445003D6618 /* ARFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFApp.swift; sourceTree = "<group>"; };
 		C69512ED273045C9003D6618 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -78,6 +87,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6952DAA273648760086287B /* FocusEntity in Frameworks */,
+				C68181A3273B20FE0080F21B /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				C681819F273B20FE0080F21B /* FirebaseAuth in Frameworks */,
+				C68181A5273B20FE0080F21B /* FirebaseStorage in Frameworks */,
+				C68181A1273B20FE0080F21B /* FirebaseFirestore in Frameworks */,
+				C68181A7273B20FE0080F21B /* FirebaseStorageSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +147,7 @@
 				C6D31D31272D1C5800EE23A2 /* Model.swift */,
 				C6D31D33272DC65300EE23A2 /* 3DAssets */,
 				C64986A92728AFB400178DD0 /* Assets.xcassets */,
+				C68181A8273B23820080F21B /* GoogleService-Info.plist */,
 				C64986AE2728AFB400178DD0 /* Info.plist */,
 				C64986AB2728AFB400178DD0 /* Preview Content */,
 			);
@@ -202,6 +217,11 @@
 			name = ChristmasLandAR;
 			packageProductDependencies = (
 				C6952DA9273648760086287B /* FocusEntity */,
+				C681819E273B20FE0080F21B /* FirebaseAuth */,
+				C68181A0273B20FE0080F21B /* FirebaseFirestore */,
+				C68181A2273B20FE0080F21B /* FirebaseFirestoreSwift-Beta */,
+				C68181A4273B20FE0080F21B /* FirebaseStorage */,
+				C68181A6273B20FE0080F21B /* FirebaseStorageSwift-Beta */,
 			);
 			productName = ChristmasLandAR;
 			productReference = C64986A22728AFB000178DD0 /* ChristmasLandAR.app */;
@@ -276,6 +296,7 @@
 			mainGroup = C64986992728AFB000178DD0;
 			packageReferences = (
 				C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C64986A32728AFB000178DD0 /* Products */;
 			projectDirPath = "";
@@ -294,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D31D39272DC89900EE23A2 /* Base.usdz in Resources */,
+				C68181A9273B23820080F21B /* GoogleService-Info.plist in Resources */,
 				C6D31D38272DC89900EE23A2 /* Lights.usdz in Resources */,
 				C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */,
 				C6D31D3A272DC89900EE23A2 /* Tree.usdz in Resources */,
@@ -307,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68181AA273B23820080F21B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68181AB273B23820080F21B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +680,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 		C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
@@ -668,6 +700,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C681819E273B20FE0080F21B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C68181A0273B20FE0080F21B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C68181A2273B20FE0080F21B /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		C68181A4273B20FE0080F21B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		C68181A6273B20FE0080F21B /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C681819D273B20FE0080F21B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
 		C6952DA9273648760086287B /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C6952D9E27346F110086287B /* XCRemoteSwiftPackageReference "FocusEntity" */;
