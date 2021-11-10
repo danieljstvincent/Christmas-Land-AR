@@ -56,12 +56,16 @@ struct ControlVisibilityToggleButton: View {
 }
 
 struct ControlButtonBar: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     @State var showSheet: Bool = false
     
     var body: some View {
         HStack {
             
+            MostRecentlyPlacedButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
+            
+            Spacer()
 
             Button(action: {
                 print("MostRecentlyPlaced button pressed")
@@ -131,3 +135,27 @@ struct ControlButton: View {
     }
 }
 
+struct MostRecentlyPlacedButton: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
+    var body: some View{
+        Button(action: {
+            print("Most Recently Placed button pressed.")
+            self.placementSettings.selectedModel = self.placementSettings.recentlyPlaced.last
+        }){
+            if let mostRecentlyPlacedModel = self.placementSettings.recentlyPlaced.last {
+                Image(uiImage: mostRecentlyPlacedModel.thumbnail)
+                    .resizable()
+                    .frame(width: 46)
+                    .aspectRatio(1/1, contentMode: .fit)
+            } else {
+                Image(systemName: "clock.fill")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+        }
+        .frame(width: 50, height: 50)
+        .background(Color.white)
+        .cornerRadius(8.0)
+    }
+}
