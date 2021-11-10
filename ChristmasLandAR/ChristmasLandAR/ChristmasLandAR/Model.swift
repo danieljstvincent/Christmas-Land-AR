@@ -20,15 +20,15 @@ enum ModelCategory: CaseIterable {
         get {
             switch self {
             case .Base:
-                return "Base"
+                return "Bases"
             case .Tree:
-                return "ChristmasTree"
+                return "Trees"
             case .Lights:
                 return "lights"
             case .Ornunments:
-                return "Ornuments"
+                return "Ornument"
             case .Topper:
-                return "Topper"
+                return "Toppers"
             }
         }
     }
@@ -77,28 +77,29 @@ struct Models {
 
     init() {
         //Base
-        let Base = Model(name: "Base", category: .Base, scaleCompensation:
-                                0.100/100)
-        self.all += [Base]
+        let TreeBase = Model(name: "Base", category: .Base, scaleCompensation:
+                                0.32/100)
+        self.all += [TreeBase]
         
         //Tree
-        let Tree = Model(name: "Tree", category: .Base, scaleCompensation:
-                                0.100/100)
-        self.all += [Tree]
+        let EmptyTree = Model(name: "Tree", category: .Tree, scaleCompensation:
+                                0.32/100)
+        
+        let ChristmasTree = Model(name: "ChristmasTree", category: .Tree, scaleCompensation:
+                                0.32/100)
+        
+        self.all += [EmptyTree, ChristmasTree]
+        
         //Lights
-        let Lights = Model(name: "Lights", category: .Base, scaleCompensation:
-                                0.100/100)
-        self.all += [Lights]
+        let ChristmasLights = Model(name: "Lights", category: .Lights, scaleCompensation:
+                                0.32/100)
+        self.all += [ChristmasLights]
         
         //Topper
-        let Star = Model(name: "Star", category: .Base, scaleCompensation:
-                                0.100/100)
-        self.all += [Star]
+        let ChristmasStar = Model(name: "Star", category: .Topper, scaleCompensation:
+                                0.32/100)
+        self.all += [ChristmasStar]
         
-        //Entire Christmas Tree
-        let ChristmasTree = Model(name: "ChristmasTree", category: .Base, scaleCompensation:
-                                0.100/100)
-        self.all += [ChristmasTree]
 
     }
     
