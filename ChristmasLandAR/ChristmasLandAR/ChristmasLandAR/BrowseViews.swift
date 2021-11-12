@@ -52,17 +52,22 @@ struct RecentsGrid: View {
 }
 struct ModelsByCategoryGrid: View {
     @Binding var showBrowse: Bool
-    let models = Models()
+//    let models = Models()
+    
+    @ObservedObject private var viewModel = ModelsViewModel()
     
     var body: some View {
         VStack {
             ForEach(ModelCategory.allCases, id: \.self) { category in
                 
                 //Only display grid
-                if let modelsByCategory = models.get(category: category) {
+                if let modelsByCategory = viewModel.models.filter({ $0.category == category }) {
                     HorizontalGrid(showBrowse: $showBrowse, title: category.label, items: modelsByCategory)
                 }
             }
+        }
+        .onAppear() {
+            self.viewModel.fetchData()
         }
     }
 }
@@ -85,7 +90,7 @@ struct HorizontalGrid: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<items.count) { index in
+                    ForEach(0..<items.count, id: \.self) { index in
                         
 
                         let model = items[index]
@@ -106,7 +111,7 @@ struct HorizontalGrid: View {
 }
 
 struct ItemButton: View {
-    let model: Model
+    @ObservedObject var model: Model
     let action: ()-> Void
     
     var body: some View {

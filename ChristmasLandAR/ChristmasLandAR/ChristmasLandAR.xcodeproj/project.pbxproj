@@ -24,19 +24,20 @@
 		C68181AD273BB6C10080F21B /* View+Externtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181AC273BB6C10080F21B /* View+Externtions.swift */; };
 		C68181AE273BB6C10080F21B /* View+Externtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181AC273BB6C10080F21B /* View+Externtions.swift */; };
 		C68181AF273BB6C10080F21B /* View+Externtions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181AC273BB6C10080F21B /* View+Externtions.swift */; };
+		C68181B1273C735D0080F21B /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181B0273C735D0080F21B /* ModelsViewModel.swift */; };
+		C68181B2273C735E0080F21B /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181B0273C735D0080F21B /* ModelsViewModel.swift */; };
+		C68181B3273C735E0080F21B /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181B0273C735D0080F21B /* ModelsViewModel.swift */; };
+		C68181C9273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
+		C68181CA273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
+		C68181CB273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
 		C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512E9272F5A45003D6618 /* PlacementSettings.swift */; };
 		C69512EC27304446003D6618 /* ARFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512EB27304445003D6618 /* ARFApp.swift */; };
 		C69512EE273045C9003D6618 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512ED273045C9003D6618 /* PlacementView.swift */; };
 		C69512F327306011003D6618 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512F227306011003D6618 /* CustomARView.swift */; };
 		C6952DA6273646E50086287B /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986D02728B07300178DD0 /* ControlView.swift */; };
 		C6952DAA273648760086287B /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C6952DA9273648760086287B /* FocusEntity */; };
-		C6952DAE273720390086287B /* ChristmasTree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6952DAD273720390086287B /* ChristmasTree.usdz */; };
 		C6D31D30272D146600EE23A2 /* BrowseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D31D2F272D146600EE23A2 /* BrowseViews.swift */; };
 		C6D31D32272D1C5800EE23A2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D31D31272D1C5800EE23A2 /* Model.swift */; };
-		C6D31D38272DC89900EE23A2 /* Lights.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D34272DC89800EE23A2 /* Lights.usdz */; };
-		C6D31D39272DC89900EE23A2 /* Base.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D35272DC89800EE23A2 /* Base.usdz */; };
-		C6D31D3A272DC89900EE23A2 /* Tree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D36272DC89800EE23A2 /* Tree.usdz */; };
-		C6D31D3B272DC89900EE23A2 /* Star.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C6D31D37272DC89800EE23A2 /* Star.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,17 +73,14 @@
 		C64986D02728B07300178DD0 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		C68181A8273B23820080F21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C68181AC273BB6C10080F21B /* View+Externtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View+Externtions.swift"; path = "../../../../View+Externtions.swift"; sourceTree = "<group>"; };
+		C68181B0273C735D0080F21B /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+		C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
 		C69512E9272F5A45003D6618 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C69512EB27304445003D6618 /* ARFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFApp.swift; sourceTree = "<group>"; };
 		C69512ED273045C9003D6618 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		C69512F227306011003D6618 /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
-		C6952DAD273720390086287B /* ChristmasTree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = ChristmasTree.usdz; path = ../../../../../3DChristmasTree/Assets/ChristmasTree.usdz; sourceTree = "<group>"; };
 		C6D31D2F272D146600EE23A2 /* BrowseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViews.swift; sourceTree = "<group>"; };
 		C6D31D31272D1C5800EE23A2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		C6D31D34272DC89800EE23A2 /* Lights.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Lights.usdz; sourceTree = "<group>"; };
-		C6D31D35272DC89800EE23A2 /* Base.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Base.usdz; sourceTree = "<group>"; };
-		C6D31D36272DC89800EE23A2 /* Tree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tree.usdz; sourceTree = "<group>"; };
-		C6D31D37272DC89800EE23A2 /* Star.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Star.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +145,11 @@
 				C64986D02728B07300178DD0 /* ControlView.swift */,
 				C68181AC273BB6C10080F21B /* View+Externtions.swift */,
 				C6D31D2F272D146600EE23A2 /* BrowseViews.swift */,
+				C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */,
 				C69512ED273045C9003D6618 /* PlacementView.swift */,
 				C69512E9272F5A45003D6618 /* PlacementSettings.swift */,
 				C6D31D31272D1C5800EE23A2 /* Model.swift */,
-				C6D31D33272DC65300EE23A2 /* 3DAssets */,
+				C68181B0273C735D0080F21B /* ModelsViewModel.swift */,
 				C64986A92728AFB400178DD0 /* Assets.xcassets */,
 				C68181A8273B23820080F21B /* GoogleService-Info.plist */,
 				C64986AE2728AFB400178DD0 /* Info.plist */,
@@ -190,18 +189,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C6D31D33272DC65300EE23A2 /* 3DAssets */ = {
-			isa = PBXGroup;
-			children = (
-				C6952DAD273720390086287B /* ChristmasTree.usdz */,
-				C6D31D35272DC89800EE23A2 /* Base.usdz */,
-				C6D31D34272DC89800EE23A2 /* Lights.usdz */,
-				C6D31D37272DC89800EE23A2 /* Star.usdz */,
-				C6D31D36272DC89800EE23A2 /* Tree.usdz */,
-			);
-			path = 3DAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,14 +306,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6D31D39272DC89900EE23A2 /* Base.usdz in Resources */,
 				C68181A9273B23820080F21B /* GoogleService-Info.plist in Resources */,
-				C6D31D38272DC89900EE23A2 /* Lights.usdz in Resources */,
 				C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */,
-				C6D31D3A272DC89900EE23A2 /* Tree.usdz in Resources */,
 				C64986AA2728AFB400178DD0 /* Assets.xcassets in Resources */,
-				C6D31D3B272DC89900EE23A2 /* Star.usdz in Resources */,
-				C6952DAE273720390086287B /* ChristmasTree.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +337,9 @@
 			files = (
 				C68181AD273BB6C10080F21B /* View+Externtions.swift in Sources */,
 				C6952DA6273646E50086287B /* ControlView.swift in Sources */,
+				C68181B1273C735D0080F21B /* ModelsViewModel.swift in Sources */,
 				C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */,
+				C68181C9273E13960080F21B /* FirebaseStorageHelper.swift in Sources */,
 				C69512EC27304446003D6618 /* ARFApp.swift in Sources */,
 				C69512EE273045C9003D6618 /* PlacementView.swift in Sources */,
 				C6D31D32272D1C5800EE23A2 /* Model.swift in Sources */,
@@ -370,7 +354,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68181CA273E13960080F21B /* FirebaseStorageHelper.swift in Sources */,
 				C68181AE273BB6C10080F21B /* View+Externtions.swift in Sources */,
+				C68181B2273C735E0080F21B /* ModelsViewModel.swift in Sources */,
 				C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68181CB273E13960080F21B /* FirebaseStorageHelper.swift in Sources */,
 				C68181AF273BB6C10080F21B /* View+Externtions.swift in Sources */,
+				C68181B3273C735E0080F21B /* ModelsViewModel.swift in Sources */,
 				C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
