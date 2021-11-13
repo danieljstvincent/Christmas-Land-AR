@@ -30,6 +30,9 @@
 		C68181C9273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
 		C68181CA273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
 		C68181CB273E13960080F21B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */; };
+		C68181CD273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
+		C68181CE273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
+		C68181CF273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
 		C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512E9272F5A45003D6618 /* PlacementSettings.swift */; };
 		C69512EC27304446003D6618 /* ARFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512EB27304445003D6618 /* ARFApp.swift */; };
 		C69512EE273045C9003D6618 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512ED273045C9003D6618 /* PlacementView.swift */; };
@@ -75,6 +78,7 @@
 		C68181AC273BB6C10080F21B /* View+Externtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View+Externtions.swift"; path = "../../../../View+Externtions.swift"; sourceTree = "<group>"; };
 		C68181B0273C735D0080F21B /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
 		C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
+		C68181CC273E43730080F21B /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		C69512E9272F5A45003D6618 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C69512EB27304445003D6618 /* ARFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFApp.swift; sourceTree = "<group>"; };
 		C69512ED273045C9003D6618 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				C69512EB27304445003D6618 /* ARFApp.swift */,
+				C68181CC273E43730080F21B /* ARViewContainer.swift */,
 				C64986A52728AFB000178DD0 /* ChristmasLandARApp.swift */,
 				C64986A72728AFB100178DD0 /* ContentView.swift */,
 				C69512F227306011003D6618 /* CustomARView.swift */,
@@ -341,6 +346,7 @@
 				C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */,
 				C68181C9273E13960080F21B /* FirebaseStorageHelper.swift in Sources */,
 				C69512EC27304446003D6618 /* ARFApp.swift in Sources */,
+				C68181CD273E43740080F21B /* ARViewContainer.swift in Sources */,
 				C69512EE273045C9003D6618 /* PlacementView.swift in Sources */,
 				C6D31D32272D1C5800EE23A2 /* Model.swift in Sources */,
 				C69512F327306011003D6618 /* CustomARView.swift in Sources */,
@@ -358,6 +364,7 @@
 				C68181AE273BB6C10080F21B /* View+Externtions.swift in Sources */,
 				C68181B2273C735E0080F21B /* ModelsViewModel.swift in Sources */,
 				C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */,
+				C68181CE273E43740080F21B /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +376,7 @@
 				C68181AF273BB6C10080F21B /* View+Externtions.swift in Sources */,
 				C68181B3273C735E0080F21B /* ModelsViewModel.swift in Sources */,
 				C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */,
+				C68181CF273E43740080F21B /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
