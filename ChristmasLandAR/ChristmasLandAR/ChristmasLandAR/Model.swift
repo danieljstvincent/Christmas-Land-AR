@@ -63,28 +63,28 @@ class Model: ObservableObject, Identifiable {
         }
     }
     
-func asynLoadModelEntity() {
-    FirebaseStoreageHelper.asyncDownloadToFilesystem(relativePath: "models/\(self.name).usdz") { localUrl in
-                                                     self.cancellable = ModelEntity.loadModelAsync(contentsOf: localUrl)
-                                                         .sink(receiveCompletion: { loadCompletion in
-
-                                                             switch loadCompletion {
-                                                             case .failure(let error): print("Unable to load modelEntity for \(self.name).Error: \(error.localizedDescription)")
-                                                             case .finished:
-                                                                 break
-                                                             }
-                                                                                             
-                                                         }, receiveValue: { modelEntity in
-
-                                                                 self.modelEntity = modelEntity
-                                                                 self.modelEntity?.scale *= self.scaleCompensation
-
-                                                                 print("ModelEntity for \(self.name) has been loaded.")
-                                                             })
+    func asynLoadModelEntity() {
+        FirebaseStoreageHelper.asyncDownloadToFilesystem(relativePath: "models/\(self.name).usdz") { localUrl in
+            self.cancellable = ModelEntity.loadModelAsync(contentsOf: localUrl)
+                .sink(receiveCompletion: { loadCompletion in
+                    
+                    switch loadCompletion {
+                    case .failure(let error): print("Unable to load modelEntity for \(self.name).Error: \(error.localizedDescription)")
+                    case .finished:
+                        break
+                    }
+                    
+                }, receiveValue: { modelEntity in
+                    
+                    self.modelEntity = modelEntity
+                    self.modelEntity?.scale *= self.scaleCompensation
+                    
+                    print("ModelEntity for \(self.name) has been loaded.")
+                })
         }
     }
 }
-                  
+
 //struct Models {
 //    var all: [Model] = []
 //
