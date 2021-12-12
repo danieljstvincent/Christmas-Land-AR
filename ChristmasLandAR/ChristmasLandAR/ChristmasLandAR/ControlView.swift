@@ -10,27 +10,28 @@ import SwiftUI
 struct ControlView: View {
     @Binding var isControlsVisible: Bool
     @Binding var showBrowse: Bool
-
+    
     
     var body: some View{
         VStack {
-        
+            
             ControlVisibilityToggleButton(isControlsVisible: $isControlsVisible)
             
             Spacer()
-
+            
             if isControlsVisible {
                 ControlButtonBar(showBrowse: $showBrowse)
             }
         }
     }
 }
+
 struct ControlVisibilityToggleButton: View {
     @Binding var isControlsVisible: Bool
-
+    
     var body: some View {
         HStack {
-     
+            
             Spacer()
             
             ZStack {
@@ -55,6 +56,24 @@ struct ControlVisibilityToggleButton: View {
     }
 }
 
+struct CheckToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button {
+            configuration.isOn.toggle()
+        } label: {
+            Label {
+                configuration.label
+            } icon: {
+                Image(systemName: configuration.isOn ? "speaker" : "speaker.slash")
+                //                    .foregroundColor(configuration.isOn ? .accentColor : .secondary)
+                    .accessibility(label: Text(configuration.isOn ? "Checked" : "Unchecked"))
+                    .imageScale(.large)
+            }
+        }
+        .buttonStyle(PlainButtonStyle())
+    }
+}
+
 struct ControlButtonBar: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
@@ -66,7 +85,36 @@ struct ControlButtonBar: View {
             MostRecentlyPlacedButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
             
             Spacer()
-
+            
+            // MARK: ChristmasTree
+            
+            Button(action: {
+                print("MostRecentlyPlaced button pressed")
+                
+            }){
+                Image( "05christmasstree8")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+            .frame(width: 50, height: 50)
+            Spacer()
+            
+            // MARK: Audio Button
+            Button(action: {
+                print("MostRecentlyPlaced button pressed")
+                
+            }){
+                Image(systemName: "speaker")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+            .frame(width: 50, height: 50)
+            
+            Spacer()
+            
+            // MARK: Mark Button
             Button(action: {
                 print("MostRecentlyPlaced button pressed")
                 
@@ -80,10 +128,10 @@ struct ControlButtonBar: View {
             
             Spacer()
             
-            // Browse Button
+            // MARK: Browse Button
             Button(action: {
                 showSheet.toggle()
-
+                
             }){
                 Image(systemName: "square.grid.2x2")
                 
@@ -96,33 +144,34 @@ struct ControlButtonBar: View {
             .sheet(isPresented: $showSheet, content: {
                 BrowseView(showBrowse: $showBrowse)
             })
-            Spacer()
-
-            Button(action: {
+        
+            // FIXME: Not to sure what is going on here
+            
+            Button (action: {
                 print("Setting button pressed")
-
-            }){
+                
+            }){      
                 Image(systemName: "slider.horizontal.3")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .buttonStyle(PlainButtonStyle())
             }
             .frame(width: 50, height: 50)
-
+            
         }
         .frame(maxWidth: 500)
         .padding(30)
         .background(Color.red.opacity(0.75))
-        }
     }
+}
 
 
 struct ControlButton: View {
     let systemIconName: String
     let action: ()-> Void
-
+    
     var body: some View {
-
+        
         Button(action: {
             self.action()
         }) {
@@ -131,7 +180,7 @@ struct ControlButton: View {
                 .foregroundColor(.white)
                 .buttonStyle(PlainButtonStyle())
         }
-            .frame(width: 50, height: 50)
+        .frame(width: 50, height: 50)
     }
 }
 
