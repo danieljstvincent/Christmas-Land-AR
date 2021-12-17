@@ -50,10 +50,10 @@ class Model: ObservableObject, Identifiable {
     init(name: String, category: ModelCategory, scaleCompensation: Float = 1.0) {
         self.name = name
         self.category = category
-        self.thumbnail = UIImage(systemName: "photo")!
+        self.thumbnail = UIImage(named: name) ?? UIImage(systemName: "photo")!
         self.scaleCompensation = scaleCompensation
         
-        FirebaseStoreageHelper.asyncDownloadToFilesystem(relativePath: "thumbnails\(self.name).png") { localUrl in
+        FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "thumbnails\(self.name).png") { localUrl in
             do {
                 let imageData = try Data(contentsOf: localUrl)
                 self.thumbnail = UIImage(data: imageData) ?? self.thumbnail

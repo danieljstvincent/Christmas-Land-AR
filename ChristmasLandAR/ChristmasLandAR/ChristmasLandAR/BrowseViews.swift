@@ -28,8 +28,9 @@ struct BrowseView: View {
 }
 
 struct RecentsGrid: View {
-    @EnvironmentObject var placementSetting: PlacementSettings
     @Binding var showBrowse: Bool
+    @EnvironmentObject var placementSetting: PlacementSettings
+   
     
     var body: some View {
         if !self.placementSetting.recentlyPlaced.isEmpty {
@@ -74,7 +75,6 @@ struct ModelsByCategoryGrid: View {
 struct HorizontalGrid: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
-    
     var title: String
     var items: [Model]
     private let gridItemLayout = [GridItem(.fixed(150))]
@@ -91,8 +91,6 @@ struct HorizontalGrid: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
                     ForEach(0..<items.count, id: \.self) { index in
-                        
-
                         let model = items[index]
                         
                         ItemButton(model: model) {

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FireBaseFireStore
+import FirebaseFirestore
 
 
 class ModelsViewModel: ObservableObject {
