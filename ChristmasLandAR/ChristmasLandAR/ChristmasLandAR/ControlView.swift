@@ -103,7 +103,7 @@ struct ControlButtonBar: View {
     var body: some View {
         HStack {
             
-            MostRecentlyPlacedButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
+//            MostRecentlyPlacedButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
             
             
             // MARK: ChristmasTree ------------------------------
