@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-class FirebaseStoreageHelper {
+class FirebaseStorageHelper {
     static private let cloudStorage = Storage.storage()
     
     class func asyncDownloadToFilesystem(relativePath: String, handler: @escaping (_ fileUrl: URL) -> Void) {
@@ -27,7 +27,7 @@ class FirebaseStoreageHelper {
         //Download to the local filesystem
         storageRef.write(toFile: fileUrl) { url, error in
             guard let localUrl = url else {
-                print("Firebase storage: Error downloadloading file with relatePath: \(relativePath)")
+                print("Firebase storage: Error downloading file with relatePath: \(relativePath)")
                 return
             }
             handler(localUrl)

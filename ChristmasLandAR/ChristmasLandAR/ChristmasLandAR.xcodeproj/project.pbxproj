@@ -13,6 +13,7 @@
 		C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C64986AC2728AFB400178DD0 /* Preview Assets.xcassets */; };
 		C64986B82728AFB400178DD0 /* ChristmasLandARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986B72728AFB400178DD0 /* ChristmasLandARTests.swift */; };
 		C64986C32728AFB400178DD0 /* ChristmasLandARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */; };
+		C67275992766BA5000E014DA /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67275982766BA5000E014DA /* SoundManager.swift */; };
 		C681819F273B20FE0080F21B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C681819E273B20FE0080F21B /* FirebaseAuth */; };
 		C68181A1273B20FE0080F21B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A0273B20FE0080F21B /* FirebaseFirestore */; };
 		C68181A3273B20FE0080F21B /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C68181A2273B20FE0080F21B /* FirebaseFirestoreSwift-Beta */; };
@@ -33,6 +34,7 @@
 		C68181CD273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
 		C68181CE273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
 		C68181CF273E43740080F21B /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68181CC273E43730080F21B /* ARViewContainer.swift */; };
+		C684F5E5276CF135008D9EEC /* christmasStoryMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C684F5E4276CF135008D9EEC /* christmasStoryMusic.mp3 */; };
 		C69512EA272F5A45003D6618 /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512E9272F5A45003D6618 /* PlacementSettings.swift */; };
 		C69512EC27304446003D6618 /* ARFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512EB27304445003D6618 /* ARFApp.swift */; };
 		C69512EE273045C9003D6618 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69512ED273045C9003D6618 /* PlacementView.swift */; };
@@ -74,11 +76,13 @@
 		C64986C22728AFB400178DD0 /* ChristmasLandARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasLandARUITests.swift; sourceTree = "<group>"; };
 		C64986C42728AFB400178DD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C64986D02728B07300178DD0 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		C67275982766BA5000E014DA /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		C68181A8273B23820080F21B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C68181AC273BB6C10080F21B /* View+Externtions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View+Externtions.swift"; path = "../../../../View+Externtions.swift"; sourceTree = "<group>"; };
 		C68181B0273C735D0080F21B /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
 		C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
 		C68181CC273E43730080F21B /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		C684F5E4276CF135008D9EEC /* christmasStoryMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = christmasStoryMusic.mp3; sourceTree = "<group>"; };
 		C69512E9272F5A45003D6618 /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C69512EB27304445003D6618 /* ARFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFApp.swift; sourceTree = "<group>"; };
 		C69512ED273045C9003D6618 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 				C64986A72728AFB100178DD0 /* ContentView.swift */,
 				C69512F227306011003D6618 /* CustomARView.swift */,
 				C64986D02728B07300178DD0 /* ControlView.swift */,
+				C67275982766BA5000E014DA /* SoundManager.swift */,
+				C684F5E4276CF135008D9EEC /* christmasStoryMusic.mp3 */,
 				C68181AC273BB6C10080F21B /* View+Externtions.swift */,
 				C6D31D2F272D146600EE23A2 /* BrowseViews.swift */,
 				C68181C8273E13960080F21B /* FirebaseStorageHelper.swift */,
@@ -312,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68181A9273B23820080F21B /* GoogleService-Info.plist in Resources */,
+				C684F5E5276CF135008D9EEC /* christmasStoryMusic.mp3 in Resources */,
 				C64986AD2728AFB400178DD0 /* Preview Assets.xcassets in Resources */,
 				C64986AA2728AFB400178DD0 /* Assets.xcassets in Resources */,
 			);
@@ -353,6 +360,7 @@
 				C6D31D30272D146600EE23A2 /* BrowseViews.swift in Sources */,
 				C64986A82728AFB100178DD0 /* ContentView.swift in Sources */,
 				C64986A62728AFB000178DD0 /* ChristmasLandARApp.swift in Sources */,
+				C67275992766BA5000E014DA /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

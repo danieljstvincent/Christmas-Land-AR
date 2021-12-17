@@ -15,7 +15,7 @@ struct ARFApp: App {
     init() {
         FirebaseApp.configure()
         
-        //Anpnymous authentication with firebase
+        //Anonymous authentication with firebase
         Auth.auth().signInAnonymously { authResult, error in
             guard let user = authResult?.user else {
                 print("FAILED: Anonymous with Firebase.")

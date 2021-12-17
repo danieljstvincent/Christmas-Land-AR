@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import FirebaseFirestore
+import FireBaseFireStore
+
 
 class ModelsViewModel: ObservableObject {
     @Published var models: [Model] = []

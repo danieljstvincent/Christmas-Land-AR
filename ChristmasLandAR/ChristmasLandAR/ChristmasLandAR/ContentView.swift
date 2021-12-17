@@ -12,6 +12,7 @@ struct ContentView: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @State private var isControlsVisible: Bool = true
     @State private var showBrowse: Bool = false
+
     
     var body: some View {
         ZStack(alignment: .bottom) {

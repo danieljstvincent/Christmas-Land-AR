@@ -11,7 +11,7 @@ import Combine
 
 class PlacementSettings: ObservableObject {
     
-    // When the user selects a model in BrowseView, this propoerty is set.
+    // When the user selects a model in BrowseView, this property is set.
     @Published var selectedModel: Model? {
         willSet(newValue) {
             print("setting selectedModel to \(String(describing: newValue?.name))")
@@ -32,6 +32,6 @@ class PlacementSettings: ObservableObject {
     }
     //This property retains a record of placed models in the scene. The last element in the array is the most recently placed model.
     @Published var recentlyPlaced: [Model] = []
-    // This property retains the cancellable onject for our SceneEvents.Upload
+    // This property retains the cancellable object for our SceneEvents.Upload
     var sceneObserver: Cancellable?
 }

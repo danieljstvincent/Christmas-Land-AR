@@ -56,6 +56,27 @@ struct ControlVisibilityToggleButton: View {
     }
 }
 
+struct playSound: View {
+    @State private var isOn = false
+
+    var body: some View {
+        VStack {
+            Button(action: {
+                if isOn == false {
+                    SoundManager.playSound(key: "christmasStoryMusic")
+                } else {
+                    SoundManager.stopPlaying()
+                }
+                isOn.toggle()
+            })
+            {
+                Image(systemName: isOn ? "speaker" : "speaker.slash")
+                    .font(.largeTitle)
+            }
+        }
+    }
+}
+
 struct CheckToggleStyle: ToggleStyle {
     func makeBody(configuration: Configuration) -> some View {
         Button {
@@ -84,56 +105,14 @@ struct ControlButtonBar: View {
             
             MostRecentlyPlacedButton().hidden(self.placementSettings.recentlyPlaced.isEmpty)
             
-            Spacer()
             
-            // MARK: ChristmasTree
+            // MARK: ChristmasTree ------------------------------
             
-            Button(action: {
-                print("MostRecentlyPlaced button pressed")
-                
-            }){
-                Image( "05christmasstree8")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .buttonStyle(PlainButtonStyle())
-            }
-            .frame(width: 50, height: 50)
-            Spacer()
-            
-            // MARK: Audio Button
-            Button(action: {
-                print("MostRecentlyPlaced button pressed")
-                
-            }){
-                Image(systemName: "speaker")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .buttonStyle(PlainButtonStyle())
-            }
-            .frame(width: 50, height: 50)
-            
-            Spacer()
-            
-            // MARK: Mark Button
-            Button(action: {
-                print("MostRecentlyPlaced button pressed")
-                
-            }){
-                Image(systemName: "clock.fill")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .buttonStyle(PlainButtonStyle())
-            }
-            .frame(width: 50, height: 50)
-            
-            Spacer()
-            
-            // MARK: Browse Button
             Button(action: {
                 showSheet.toggle()
                 
             }){
-                Image(systemName: "square.grid.2x2")
+                Image( "05christmasstree")
                 
                     .font(.system(size: 35))
                     .foregroundColor(.white)
@@ -144,19 +123,62 @@ struct ControlButtonBar: View {
             .sheet(isPresented: $showSheet, content: {
                 BrowseView(showBrowse: $showBrowse)
             })
-        
-            // FIXME: Not to sure what is going on here
+
+//            Button(action: {
+//                print("MostRecentlyPlaced button pressed")
+//
+//            }){
+//                Image( "05christmasstree")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(.white)
+//                    .buttonStyle(PlainButtonStyle())
+//            }
+//            .frame(width: 50, height: 50)
             
-            Button (action: {
-                print("Setting button pressed")
+            Spacer()
+            
+            // MARK: Camera ----------------------------
+            Button(action: {
+                print("MostRecentlyPlaced button pressed")
                 
-            }){      
-                Image(systemName: "slider.horizontal.3")
+            }){
+                Image(systemName: "camera")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .buttonStyle(PlainButtonStyle())
             }
             .frame(width: 50, height: 50)
+        
+            Spacer()
+            
+            // MARK: Speaker Button Icon --------------------------
+            Button(action: {
+                print("MostRecentlyPlaced button pressed")
+                
+            }){
+                Image(systemName:  "speaker")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+            .frame(width: 50, height: 50)
+    
+            // MARK: Speaker Image ------
+
+            
+            Spacer()
+            Button (action: {
+                print("Setting button pressed")
+                
+            }){      
+                Image(systemName: "questionmark.circle")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
+            }
+            .frame(width: 50, height: 50)
+            
+            playSound()
             
         }
         .frame(maxWidth: 500)

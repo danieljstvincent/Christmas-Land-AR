@@ -13,7 +13,7 @@ enum ModelCategory: String, CaseIterable {
     case Base
     case Tree
     case Lights
-    case Ornunments
+    case Ornaments
     case decor
     case Topper
     
@@ -26,8 +26,8 @@ enum ModelCategory: String, CaseIterable {
                 return "Trees"
             case .Lights:
                 return "lights"
-            case .Ornunments:
-                return "Ornument"
+            case .Ornaments:
+                return "Ornament"
             case .decor:
                 return "decors"
             case .Topper:
@@ -64,7 +64,7 @@ class Model: ObservableObject, Identifiable {
     }
     
     func asynLoadModelEntity() {
-        FirebaseStoreageHelper.asyncDownloadToFilesystem(relativePath: "models/\(self.name).usdz") { localUrl in
+        FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "models/\(self.name).usdz") { localUrl in
             self.cancellable = ModelEntity.loadModelAsync(contentsOf: localUrl)
                 .sink(receiveCompletion: { loadCompletion in
                     
