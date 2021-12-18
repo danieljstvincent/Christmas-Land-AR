@@ -71,7 +71,9 @@ struct playSound: View {
             })
             {
                 Image(systemName: isOn ? "speaker" : "speaker.slash")
-                    .font(.largeTitle)
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .buttonStyle(PlainButtonStyle())
             }
         }
     }
