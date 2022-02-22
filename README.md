@@ -11,5 +11,5 @@ Time spent: **150** hours spent in total
 
 Here's a walkthrough of implemented user stories:
 
-![](https://giphy.com/embed/lBrvoM5LBaW3FYE9pC)
+![](http://g.recordit.co/6Ob1wsGdHR.gif)
 
