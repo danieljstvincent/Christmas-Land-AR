@@ -11,5 +11,5 @@ Time spent: **150** hours spent in total
 
 Here's a walkthrough of implemented user stories:
 
-<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+<img src="http://g.recordit.co/6Ob1wsGdHR.gif" width="40" height="40" />
 
