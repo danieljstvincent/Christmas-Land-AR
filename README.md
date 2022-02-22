@@ -13,4 +13,4 @@ Here's a walkthrough of implemented user stories:
 
 
 
-<img src= "https://recordit.co/CoNXByvUjF" width=250><br>
+<img src= "https://giphy.com/gifs/lBrvoM5LBaW3FYE9pC" width=250><br>
