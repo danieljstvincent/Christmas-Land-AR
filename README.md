@@ -1,3 +1,16 @@
-# Christmas-Land-AR
-A app sharing the holiday sprint through the joy of Augmented Reality
-![Christmas tree Icon3](https://user-images.githubusercontent.com/59455549/141838273-51c79a46-b873-4549-8c85-0451d5da9864.png)
+# Christmas Land AR
+
+This App was created to allow user to expreince the magic of Christmas through the magic of Agmented Reality.
+
+Time spent: **150** hours spent in total
+
+## User Stories
+
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+
+
+<img src="https://recordit.co/CoNXByvUjF" width=250><br>
