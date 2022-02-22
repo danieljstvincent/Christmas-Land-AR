@@ -11,5 +11,5 @@ Time spent: **150** hours spent in total
 
 Here's a walkthrough of implemented user stories:
 
-
+![](http://i.imgur.com/OUkLi.gif)
 <iframe src="https://giphy.com/embed/lBrvoM5LBaW3FYE9pC" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lBrvoM5LBaW3FYE9pC">via GIPHY</a></p>
