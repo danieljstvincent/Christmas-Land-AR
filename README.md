@@ -1,8 +1,8 @@
 # Christmas Land AR
 
-This App was created to allow user to expreince the magic of Christmas through the magic of Agmented Reality.
+This App was created to allow the user to experience the magic of Christmas through the magic of Augmented Reality.
 
-Time spent: **150** hours spent in total
+Time spent: **150** hours spent in total.
 
 ## Technologies used
 
