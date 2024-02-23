@@ -7,9 +7,9 @@ Time spent: **150** hours spent in total.
 ## Technologies used
 
 - Developed a native iOS app using SwiftUI and Swift 
-- Using RealityKit and ARKit to create an Augmented Reality Christmas Experiences 
-- Storage all thumbnails images and 3D assets using Firebase 
-- Converted 3D assets from .obj files to apples.USDZ using apple Realty Converter 
+- Using RealityKit and ARKit to create an Augmented Reality Christmas Experience 
+- Storage all thumbnail images and 3D assets using Firebase 
+- Converted 3D assets from .obj files to apples.USDZ using Apple Realty Converter 
 
 ## Video Walkthrough
 
